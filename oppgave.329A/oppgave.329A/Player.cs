@@ -11,18 +11,20 @@ public class Player
         Name = name;
         Points = points;
     }
-    public void Play(Player player)
+    public void Play(Player player2)
     {
         Random random = new Random();
-        int num = random.Next(2);
+        int num = random.Next(20);
 
         if (num % 2 == 0)
         {
-            player.Points++;
+            player2.Points++;
+            Points--;
         }
         else
         {
-            player.Points--;
+            player2.Points--;
+            Points++;
         }
     }
 
