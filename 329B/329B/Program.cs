@@ -13,14 +13,16 @@
             {
                 Console.WriteLine();
                 Console.WriteLine("Legg til elev");
-                var UserCmd = Console.ReadLine();
-                class1.AddStudent(UserCmd);
+                var StudentName = Console.ReadLine();
+                class1.AddStudent(StudentName);
 
-                class1.ShowStudent();
                 Console.WriteLine("Legg til fag");
                 var subject = Console.ReadLine();
                 class1.AddSubject(subject);
-                class1.ShowSubject();
+                //class1.ShowStudent();
+
+
+                //class1.ShowSubject();
 
 
             }

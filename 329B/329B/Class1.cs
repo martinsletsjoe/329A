@@ -31,9 +31,9 @@ public class Class1
 
     
 
-    public void AddStudent(string name, List<Subject> subjects)
+    public void AddStudent(string name)
     {
-        _students.Add(new Student(name, subjects));
+        _students.Add(new Student(name));
     }
 
 
@@ -43,7 +43,7 @@ public class Class1
         foreach (var student in _students)
         {
            
-            Console.WriteLine(student.Name);
+            Console.WriteLine(student.Name + _Subjects._name);
 
         }
         
