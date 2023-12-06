@@ -22,11 +22,13 @@
                 //class1.ShowStudent();
 
 
-                //class1.ShowSubject();
+                class1.ShowStudentInfo();
+                Console.WriteLine(class1._className);
 
 
             }
         }
+
 
         // Liste av fag i skole
         // hvert fag har en klasse

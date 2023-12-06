@@ -3,11 +3,16 @@
 public class Student
 {
     public string Name;
+    public List<Subject> StandardSubjects;
+    public List<Subject> UniqueSubjects;
 
-    public Student(string name)
+    public Student(string name, List<Subject> standardSubjects = null, List<Subject> uniqueSubjects = null)
     {
         Name = name;
+        StandardSubjects = standardSubjects ?? new List<Subject>();
+        UniqueSubjects = uniqueSubjects ?? new List<Subject>();
     }
+
 }
 
 /*

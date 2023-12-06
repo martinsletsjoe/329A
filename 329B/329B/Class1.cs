@@ -2,7 +2,7 @@
 
 public class Class1
 {
-    private string _className;
+    public string _className;
 
     
     public Class1(string className)
@@ -39,13 +39,12 @@ public class Class1
 
     public void ShowStudentInfo()
     {
-        
-        foreach (var student in _students)
+        Console.Clear();
+        for (var index = 0; index < _students.Count; index++)
         {
-           
-            Console.WriteLine(student.Name + _Subjects._name);
-
+            var student = _students[index];
+            var subjects = _Subjects[index];
+            Console.WriteLine(student.Name +" " + subjects.Name);
         }
-        
     }
 }
