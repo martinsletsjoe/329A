@@ -11,19 +11,19 @@
 
             while (true)
             {
-                Console.WriteLine();
-                Console.WriteLine("Legg til elev");
-                var StudentName = Console.ReadLine();
-                class1.AddStudent(StudentName);
+                //Console.WriteLine();
+                //Console.WriteLine("Legg til elev");
+                //var StudentName = Console.ReadLine();
+                //class1.AddStudent(StudentName);
 
-                Console.WriteLine("Legg til fag");
-                var subject = Console.ReadLine();
-                class1.AddSubject(subject);
-                //class1.ShowStudent();
+                //Console.WriteLine("Legg til fag");
+                //var subject = Console.ReadLine();
+                //class1.AddSubject(subject);
+                ////class1.ShowStudent();
 
 
-                class1.ShowStudentInfo();
-                Console.WriteLine(class1._className);
+                //class1.ShowStudentInfo();
+                //Console.WriteLine(class1._className);
 
 
             }

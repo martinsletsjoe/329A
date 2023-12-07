@@ -3,21 +3,22 @@
 public class Class1
 {
     public string _className;
+    public List<Student> _students = new List<Student>();
+    private Subject _subject;
 
-    
-    public Class1(string className)
+
+    public Class1(string className, Subject subject)
     {
         _className = className;
-
+        _subject = subject;
+        _students = new List<Student>();
     }
 
-    public List<Student> _students = new List<Student>();
-    public List<Subject> _Subjects = new List<Subject>();
 
-
-    public void AddSubject(string subject)
+    public void RegisterStudent(Student student)
     {
-        _Subjects.Add(new Subject(subject));
+        _students.Add(student);
+        student.RegisterClass(this);
     }
 
     //public void ShowSubject()
@@ -31,20 +32,20 @@ public class Class1
 
     
 
-    public void AddStudent(string name)
-    {
-        _students.Add(new Student(name));
-    }
+    //public void AddStudent(string name)
+    //{
+    //    _students.Add(new Student(name));
+    //}
 
 
-    public void ShowStudentInfo()
-    {
-        Console.Clear();
-        for (var index = 0; index < _students.Count; index++)
-        {
-            var student = _students[index];
-            var subjects = _Subjects[index];
-            Console.WriteLine(student.Name +" " + subjects.Name);
-        }
-    }
+    //public void ShowStudentInfo()
+    //{
+    //    Console.Clear();
+    //    for (var index = 0; index < _students.Count; index++)
+    //    {
+    //        var student = _students[index];
+    //        var subjects = _Subjects[index];
+    //        Console.WriteLine(student.Name +" " + subjects.Name);
+    //    }
+    //}
 }

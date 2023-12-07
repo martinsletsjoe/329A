@@ -3,16 +3,18 @@
 public class Student
 {
     public string Name;
-    public List<Subject> StandardSubjects;
-    public List<Subject> UniqueSubjects;
+    private List<Class1> _classes;
 
-    public Student(string name, List<Subject> standardSubjects = null, List<Subject> uniqueSubjects = null)
+    public Student(string name)
     {
         Name = name;
-        StandardSubjects = standardSubjects ?? new List<Subject>();
-        UniqueSubjects = uniqueSubjects ?? new List<Subject>();
+        _classes = new List<Class1>();
     }
 
+    public void RegisterClass(Class1 class1)
+    {
+        _classes.Add(class1);
+    }
 }
 
 /*
